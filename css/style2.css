@@ -25,14 +25,9 @@ footer {
   border: 1rem double black;
   margin-bottom: 2rem;
 }
-footer p {
-  padding-top: 1rem;
-  font-weight: bold;
-  font-family: monospace;
-}
 
-.iconsF {
-  padding-top: 4rem;
+.anim {
+  padding: 7px;
 }
 
 .anim:hover {
@@ -40,6 +35,12 @@ footer p {
   transition: all 1.5s;
 }
 
+@media screen and (max-width: 576px) {
+  .mobil {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /* TITTLE-SUBT */
 h1 {
   font-size: 3rem;
@@ -58,6 +59,15 @@ h2:hover {
   transition: all 2s;
 }
 
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
 /* SOBRE NOSOTROS */
 .bio, .howww {
   padding: 4rem;
