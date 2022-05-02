@@ -1,4 +1,7 @@
-                                                    /*FUENTES AGREGADAS  */
+html{
+    scroll-behavior: smooth;
+}
+/*FUENTES AGREGADAS  */
 @font-face {
     font-family: fontuno;
     src: url(/Multimedia/fonts/LEMONMILK-RegularItalic.otf);
