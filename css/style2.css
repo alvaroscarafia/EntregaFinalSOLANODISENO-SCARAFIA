@@ -1,6 +1,19 @@
 /* VARIABLES */
 /* MAPA DE BG COLORS */
 /* mixin */
+html {
+  scroll-behavior: smooth;
+}
+
+/*FUENTES AGREGADAS  */
+@font-face {
+  font-family: fontuno;
+  src: url(/Multimedia/fonts/LEMONMILK-RegularItalic.otf);
+}
+@font-face {
+  font-family: fontdos;
+  src: url(/Multimedia/fonts/LEMONMILK-BoldItalic.otf);
+}
 .seccionA {
   padding: 4rem;
 }
@@ -74,5 +87,26 @@ h2:hover {
   }
 }
 /* EXTEND */
+/* HEADER */
+header {
+  padding: 3rem;
+}
+
+/*  NAVBAR */
+nav {
+  padding: 15rem;
+  font-weight: bold;
+  border-radius: 10%;
+}
+
+/* PRODUCTOS */
+.card:hover {
+  transform: scale(120%);
+  transition: all 2s;
+}
+
+.card {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
 
 /*# sourceMappingURL=style2.css.map */
