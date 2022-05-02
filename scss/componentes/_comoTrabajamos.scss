@@ -1,0 +1,17 @@
+                                /* COMO TRABAJAMOS */
+                                @media screen and (max-width:1200px){
+                                    .howww{
+                                        padding: 1rem;
+                                        font-size:15px;
+                                        text-align: center;
+                                    }
+                                    
+                                    
+                                }
+
+
+
+                                /* EXTEND */
+.howww{
+    @extend .bio;
+}

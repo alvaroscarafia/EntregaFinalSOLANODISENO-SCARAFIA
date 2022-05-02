@@ -1,0 +1,51 @@
+                                                    /*FUENTES AGREGADAS  */
+@font-face {
+    font-family: fontuno;
+    src: url(/Multimedia/fonts/LEMONMILK-RegularItalic.otf);
+}
+@font-face{
+    font-family: fontdos;
+    src: url(/Multimedia/fonts/LEMONMILK-BoldItalic.otf);
+}
+
+
+
+
+                                                    /* HEADER */
+
+header{
+    padding: 3rem;
+}
+
+
+
+                                                    /*  NAVBAR */
+nav{
+    padding:15rem;
+    height: 5rem;
+    font-weight: bold;
+    border-radius: 10%;
+}
+
+                                                    /* FOOTER   */
+.iconsF{
+    padding-top: 4rem;
+}
+
+.anim:hover{
+    transform: scale(130%);
+    transition: all 1.5s;
+}
+
+
+
+                                                    /* PRODUCTOS */
+
+.card:hover{
+    transform: scale(120%);
+    transition: all 2s;
+}
+
+
+
+

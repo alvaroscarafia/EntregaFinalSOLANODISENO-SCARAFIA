@@ -1,0 +1,14 @@
+
+/* VARIABLES */
+$borders: 1rem double black;
+
+
+/* MAPA DE BG COLORS */
+$bg-colors:(fondo1:white, fondo2:rgb(209, 209, 209),fondo3:green );
+
+
+/* mixin */
+
+@mixin pad {
+    padding: 4rem;
+}

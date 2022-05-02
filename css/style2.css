@@ -1,0 +1,69 @@
+/* VARIABLES */
+/* MAPA DE BG COLORS */
+/* mixin */
+.seccionA {
+  padding: 4rem;
+}
+
+/* FOOTER */
+footer {
+  background-image: url(/Multimedia/img/fondo1.png);
+  background-position: bottom;
+  border: 1rem double black;
+  margin-bottom: 2rem;
+}
+footer p {
+  padding-top: 1rem;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+/* TITTLE-SUBT */
+h1 {
+  font-size: 3rem;
+  font-family: monospace;
+  text-decoration: underline;
+}
+
+h2 {
+  padding-bottom: 4rem;
+  font-size: 2rem;
+  font-family: monospace;
+  text-decoration: underline;
+}
+h2:hover {
+  transform: scale(120%);
+  transition: all 2s;
+}
+
+/* SOBRE NOSOTROS */
+.bio, .howww {
+  padding: 4rem;
+  margin-top: 1rem;
+  font-family: fontuno;
+  border: 1rem double black;
+  border-radius: 5%;
+  font-size: 20px;
+}
+.bio:hover, .howww:hover {
+  background-color: rgb(209, 209, 209);
+  transition: all 2s;
+}
+
+@media screen and (max-width: 1200px) {
+  .bio, .howww {
+    padding: 1rem;
+    font-size: 13px;
+  }
+}
+/* COMO TRABAJAMOS */
+@media screen and (max-width: 1200px) {
+  .howww {
+    padding: 1rem;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+/* EXTEND */
+
+/*# sourceMappingURL=style2.css.map */

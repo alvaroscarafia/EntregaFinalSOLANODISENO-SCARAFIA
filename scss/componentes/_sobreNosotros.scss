@@ -1,0 +1,26 @@
+                                                    /* SOBRE NOSOTROS */
+
+                                                    .bio{ 
+                                                        @include pad;
+                                                        margin-top: 1rem;
+                                                        font-family: fontuno;
+                                                        border: $borders;
+                                                        border-radius: 5%;
+                                                        font-size: 20px;
+                                                    
+                                                            &:hover{
+                                                        background-color: map-get($bg-colors, fondo2);
+                                                        transition: all 2s;
+                                                    }
+                                                    }
+
+
+                                                    @media screen and (max-width:1200px){
+                                                        
+                                                        .bio{
+                                                            padding: 1rem;
+                                                            font-size: 13px;
+                                                    
+                                                        }
+                                                        
+                                                    }
