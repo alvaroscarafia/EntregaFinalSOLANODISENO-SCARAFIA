@@ -18,6 +18,15 @@ footer p {
   font-family: monospace;
 }
 
+.iconsF {
+  padding-top: 4rem;
+}
+
+.anim:hover {
+  transform: scale(130%);
+  transition: all 1.5s;
+}
+
 /* TITTLE-SUBT */
 h1 {
   font-size: 3rem;

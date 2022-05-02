@@ -25,20 +25,12 @@ header{
                                                     /*  NAVBAR */
 nav{
     padding:15rem;
-    height: 5rem;
     font-weight: bold;
     border-radius: 10%;
 }
 
                                                     /* FOOTER   */
-.iconsF{
-    padding-top: 4rem;
-}
 
-.anim:hover{
-    transform: scale(130%);
-    transition: all 1.5s;
-}
 
 
 
