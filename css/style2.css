@@ -35,12 +35,6 @@ footer {
   transition: all 1.5s;
 }
 
-@media screen and (max-width: 576px) {
-  .mobil {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 /* TITTLE-SUBT */
 h1 {
   font-size: 3rem;
@@ -103,12 +97,29 @@ header {
 }
 
 /*  NAVBAR */
-nav {
-  padding: 15rem;
-  font-weight: bold;
-  border-radius: 10%;
+.navcont {
+  padding: 1em;
+  background-color: black;
+  background-position: top;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5%;
 }
 
+.navlink {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  font-size: 2rem;
+  font-family: monospace;
+}
+
+@media screen and (max-width: 1200px) {
+  .navcont {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 /* PRODUCTOS */
 .card:hover {
   transform: scale(120%);
@@ -116,7 +127,14 @@ nav {
 }
 
 .card {
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 776px) {
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style2.css.map */

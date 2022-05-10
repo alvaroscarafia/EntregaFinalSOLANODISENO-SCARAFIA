@@ -1,6 +1,24 @@
                                                     /*  NAVBAR */
-                                                    nav{
-                                                        padding:15rem;
-                                                        font-weight: bold;
-                                                        border-radius: 10%;
-                                                    }
+.navcont{
+    padding: 1em;
+    background-color: black;
+    background-position: top;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5%;
+}
+
+.navlink{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+@media screen and (max-width:1200px){
+    .navcont{
+        flex-direction: column;
+        text-align: center;
+    }
+}
