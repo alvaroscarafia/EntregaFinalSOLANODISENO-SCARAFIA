@@ -5,6 +5,10 @@ h1{
     font-size: 3rem;
     font-family: monospace;
     text-decoration: underline;
+
+    &:hover{
+        transform: scale(120%);
+    transition: all 2s;    }
 }
 
 h2{
