@@ -31,7 +31,14 @@ footer div div div a p {
 }
 
 footer div div div a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: black;
+}
+
+footer h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-bottom: 2em;
 }
 
 .anim {
@@ -237,6 +244,25 @@ header h1 {
 
 .form-row button:active {
   background-color: #407FC7;
+}
+
+.exito {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 4em;
+  color: white;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.exito-cont {
+  margin-top: 5em;
+  min-height: 30em;
+  border: 1rem double black;
+  background-image: url(/Multimedia/img/Solano/DSC_0254.jpg);
+  background-position: center;
 }
 
 /*# sourceMappingURL=style2.css.map */

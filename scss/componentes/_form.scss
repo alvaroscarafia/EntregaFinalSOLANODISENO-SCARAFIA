@@ -82,3 +82,23 @@ background-color: #76aeed;
 .form-row button:active{
     background-color: #407FC7;
 }
+
+
+.exito{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 4em;
+    color: white;
+    line-height: 2;
+    text-decoration: none;
+}
+
+.exito-cont{
+    margin-top: 5em;
+    min-height: 30em;
+    border: $borders;
+    background-image: url(/Multimedia/img/Solano/DSC_0254.jpg);
+    background-position: center;
+}
