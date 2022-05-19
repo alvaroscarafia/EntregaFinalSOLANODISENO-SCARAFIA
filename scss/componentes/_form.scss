@@ -101,4 +101,11 @@ background-color: #76aeed;
     border: $borders;
     background-image: url(/Multimedia/img/Solano/DSC_0254.jpg);
     background-position: center;
+}       
+
+
+@media screen and (max-width:1200px){
+    .body-form{
+        font-size: 1em;
+    }
 }

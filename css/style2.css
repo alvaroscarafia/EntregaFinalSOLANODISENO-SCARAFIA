@@ -265,4 +265,10 @@ header h1 {
   background-position: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .body-form {
+    font-size: 1em;
+  }
+}
+
 /*# sourceMappingURL=style2.css.map */
