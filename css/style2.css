@@ -76,7 +76,6 @@ h2:hover {
   h1 {
     font-size: 2rem;
   }
-
   h2 {
     font-size: 1rem;
   }
@@ -148,11 +147,16 @@ header {
 /* PRODUCTOS */
 .card:hover {
   transform: scale(120%);
-  transition: all 2s;
+  transition: all 0.8s;
 }
 
 .card {
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0.5rem 0.5rem 1rem 0.01rem #F0EBE3;
+}
+
+.card button {
+  margin-top: 4px;
+  width: 100%;
 }
 
 @media screen and (max-width: 776px) {
@@ -160,7 +164,6 @@ header {
     flex-direction: column;
     align-items: center;
   }
-
   .carta {
     margin-top: 5em;
   }

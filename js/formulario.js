@@ -52,12 +52,11 @@ formulario.addEventListener("submit", (event) => {
 
     localStorage.setItem("FormularioEnviado", 1);
 
-    //chequear form
     setTimeout(function(){
         window.location.replace('exito.html');
-    },2000);
+    },1000);
     
 });
 
-// CHEQUEAR SI SE ENVIO FORMULARIO
+
 
