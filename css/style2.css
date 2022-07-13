@@ -168,6 +168,41 @@ header {
     margin-top: 5em;
   }
 }
+.carritoHeader {
+  border-bottom: 1px solid #ccc;
+}
+
+.productoEnCarrito {
+  padding: 20px 0px;
+}
+
+.imagenProductoCarrito {
+  max-width: 100px;
+  border-radius: 20px;
+}
+
+.cantidadProdCarritoJs {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 4px;
+}
+
+.tituloProductoCarritoCss {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-left: 6px;
+}
+
+.totalCarritoJs {
+  padding: 30px 5px;
+}
+
+.totalCarrito {
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
