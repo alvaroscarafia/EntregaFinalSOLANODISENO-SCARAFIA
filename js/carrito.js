@@ -65,3 +65,5 @@ function actualizacionPrecioCarrito(){
         console.log(cantidadProductoCarrito);
     })
 }
+
+
