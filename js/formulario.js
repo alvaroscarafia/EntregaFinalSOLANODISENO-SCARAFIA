@@ -61,7 +61,7 @@ formulario.addEventListener("submit", (event) => {
     Swal.fire({
         text: `${inputNombre.value} su consulta ha sido enviada correctamente`,
         icon: "success",
-        timer: 1500
+        timer: 2000
     })
 
     // Limpiar los inputs
