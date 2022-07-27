@@ -1,3 +1,5 @@
+
+
 const agregarAlCarritoButtons = document.querySelectorAll(".agregarAlCarrito");
 agregarAlCarritoButtons.forEach(agregarAlCarritoBoton => {
     agregarAlCarritoBoton.addEventListener("click", clickParaAgregar);

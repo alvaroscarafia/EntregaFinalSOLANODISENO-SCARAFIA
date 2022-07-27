@@ -2,7 +2,7 @@
                             /* TITTLE-SUBT */
 
 h1{
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: monospace;
     text-decoration: underline;
 
@@ -13,7 +13,7 @@ h1{
 
 h2{
     padding-bottom: 4rem;
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: monospace;
     text-decoration: underline;
 
@@ -26,10 +26,10 @@ h2{
 
 @media screen and (max-width:576px){
     h1{
-        font-size:2rem;
+        font-size:1rem;
     }
 
     h2{
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
 }

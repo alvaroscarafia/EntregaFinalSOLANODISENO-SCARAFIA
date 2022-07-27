@@ -28,6 +28,7 @@ footer {
 
 footer div div div a p {
   color: black;
+  font-size: 1rem;
 }
 
 footer div div div a {
@@ -36,6 +37,7 @@ footer div div div a {
 }
 
 footer h3 {
+  font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding-bottom: 2em;
@@ -52,7 +54,7 @@ footer h3 {
 
 /* TITTLE-SUBT */
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: monospace;
   text-decoration: underline;
 }
@@ -63,7 +65,7 @@ h1:hover {
 
 h2 {
   padding-bottom: 4rem;
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: monospace;
   text-decoration: underline;
 }
@@ -74,10 +76,10 @@ h2:hover {
 
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
 }
 /* SOBRE NOSOTROS */
@@ -129,7 +131,7 @@ header {
   text-decoration: none;
   list-style-type: none;
   color: white;
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: monospace;
 }
 
@@ -141,7 +143,7 @@ header {
 }
 @media screen and (max-width: 776px) {
   .navlink {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
 }
 /* PRODUCTOS */
@@ -301,12 +303,6 @@ header h1 {
   border: 1rem double black;
   background-image: url(/Multimedia/img/Solano/DSC_0254.jpg);
   background-position: center;
-}
-
-@media screen and (max-width: 1200px) {
-  .body-form {
-    font-size: 1em;
-  }
 }
 
 /*# sourceMappingURL=style2.css.map */
