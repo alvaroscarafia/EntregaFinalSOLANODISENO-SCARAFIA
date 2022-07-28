@@ -62,7 +62,17 @@ formulario.addEventListener("submit", (event) => {
         text: `${inputNombre.value} su consulta ha sido enviada correctamente`,
         icon: "success",
         timer: 2000
-    })
+    });
+
+    // EMAIL js
+    
+        emailjs.send("service_yyqp4gr","template_p6wcxdh",{
+        from_name: inputNombre.value,
+        to_name: "Solano Diseño",
+        message: inputConsul.value,
+        reply_to: inputEmail.value,
+        });
+    
 
     // Limpiar los inputs
     inputNombre.value = "";
