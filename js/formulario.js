@@ -47,6 +47,7 @@ formulario.addEventListener("submit", (event) => {
             return;
         }
 
+    
     // Crear objeto
     const consulta = {
         nombre: inputNombre.value,
@@ -60,7 +61,6 @@ formulario.addEventListener("submit", (event) => {
 
     Swal.fire({
         text: `${inputNombre.value} su consulta ha sido enviada correctamente`,
-        icon: "success",
         timer: 2000
     });
 
