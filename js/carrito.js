@@ -5,6 +5,9 @@ agregarAlCarritoButtons.forEach(agregarAlCarritoBoton => {
     agregarAlCarritoBoton.addEventListener("click", clickParaAgregar);
 })
 
+const botonComprar = document.querySelector('.comprarBoton');
+botonComprar.addEventListener('click', comprarFuncion);
+
 const containerProductosCarrito = document.querySelector(".containerProductosCarrito");
 
                                                         /* FUNCION PARA AGREGAR AL CARRITO */
@@ -21,6 +24,19 @@ function clickParaAgregar(event){
 }
 
 function agregarProductosAlCarrito (nombreProductoCarrito,precioProductoCarrito,imagenProductoCarrito){
+
+    const elementoTitulo = containerProductosCarrito.getElementsByClassName("tituloProductoCarritoJs");
+
+    for(let i = 0; i < elementoTitulo.length; i++){
+        if(elementoTitulo[i].innerText === nombreProductoCarrito ){
+            let elementoCantidad = elementoTitulo[i].parentElement.parentElement.parentElement.querySelector('.cantidadProdCarritoJs');
+            elementoCantidad.value++;
+            $('.toast').toast('show');
+            actualizacionPrecioCarrito();
+            return;
+        }
+    }
+
     const seccionCarrito = document.createElement('div');
 
     const productoEnCarrito = `
@@ -47,6 +63,10 @@ function agregarProductosAlCarrito (nombreProductoCarrito,precioProductoCarrito,
 seccionCarrito.innerHTML = productoEnCarrito;
 containerProductosCarrito.append(seccionCarrito);
 
+seccionCarrito.querySelector('.buttonDelete').addEventListener('click',borrarItemCarrito);
+
+seccionCarrito.querySelector('.cantidadProdCarritoJs').addEventListener('change', cambiarCantidad);
+
 actualizacionPrecioCarrito();
 }
 
@@ -60,12 +80,30 @@ function actualizacionPrecioCarrito(){
     
     productosEnCarrito.forEach((productoEnCarrito) => {
         const elementoCarritoPrecio = productoEnCarrito.querySelector(".precioEnCarritoJs");
-        const carritoPrecio = Number(elementoCarritoPrecio.textContent.replace("$", ""));
+        const carritoPrecio = Number(elementoCarritoPrecio.textContent.replace("$", ''));
         
         const cantidadProductoCarritoElement = productoEnCarrito.querySelector(".cantidadProdCarritoJs");
-        const cantidadProductoCarrito = cantidadProductoCarritoElement.value;
-        console.log(cantidadProductoCarrito);
-    })
+        const cantidadProductoCarrito = Number(cantidadProductoCarritoElement.value);
+        
+        total = total + carritoPrecio * cantidadProductoCarrito;
+        
+    });
+    totalCarrito.innerHTML = `${total}$`;
 }
 
 
+function borrarItemCarrito(event){
+    const click = event.target;
+    click.closest('.productoEnCarrito').remove();
+    actualizacionPrecioCarrito();
+}
+
+function cambiarCantidad(event){
+    const input = event.targe;
+    input.value <= 0 ? (input.value = 1) : null;
+}
+
+function comprarFuncion(){
+    containerProductosCarrito.innerHTML = "";
+    actualizacionPrecioCarrito();
+}
