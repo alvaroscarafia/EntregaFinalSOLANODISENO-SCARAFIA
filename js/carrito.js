@@ -72,7 +72,7 @@ actualizacionPrecioCarrito();
 
                                                         /* ACTUALIZACION DE PRECIO EN CARRITO */
 
-function actualizacionPrecioCarrito(){
+/* function actualizacionPrecioCarrito(){
     let total = 0;
     const totalCarrito = document.querySelector(".totalCarritoJs");
     
@@ -89,7 +89,7 @@ function actualizacionPrecioCarrito(){
         
     });
     totalCarrito.innerHTML = `${total}$`;
-}
+} */
 
 
 function borrarItemCarrito(event){
@@ -98,10 +98,10 @@ function borrarItemCarrito(event){
     actualizacionPrecioCarrito();
 }
 
-function cambiarCantidad(event){
+/* function cambiarCantidad(event){
     const input = event.targe;
     input.value <= 0 ? (input.value = 1) : null;
-}
+} */
 
 function comprarFuncion(){
     containerProductosCarrito.innerHTML = "";
