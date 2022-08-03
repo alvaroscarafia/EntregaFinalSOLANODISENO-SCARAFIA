@@ -1,5 +1,7 @@
-
+// ARRAY DE CONSULTAS Y RESERVAS
 const consultas = [];
+
+// OBTENIENDO LOS VALORES DE LOS INPUTS
 
 const formulario = document.getElementById("formulario");
 const inputNombre = document.getElementById("fullName");
@@ -7,6 +9,8 @@ const inputEmail = document.getElementById("email");
 const inputNumero = document.getElementById("number");
 const inputConsul = document.getElementById("consulta");
 const boton = document.getElementById("btn");
+
+// FUNCION SUBMIT
 
 formulario.addEventListener("submit", (event) => {
 
@@ -67,7 +71,7 @@ formulario.addEventListener("submit", (event) => {
     // EMAIL js
     
         emailjs.send("service_yyqp4gr","template_p6wcxdh",{
-        from_name: inputNombre.value,
+        from_name: `${inputNombre.value}--${inputNumero.value}`,
         to_name: "Solano Diseño",
         message: inputConsul.value,
         reply_to: inputEmail.value,
