@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nombre": "Mesa Brava",
+        "precio": 7000
+    },
+    {
+        "id": 2,
+        "nombre": "Mesa Rumi",
+        "precio": 7000
+    },
+    {
+        "id": 3,
+        "nombre": "Posavasos",
+        "precio": 2000
+    },
+    {
+        "id": 4,
+        "nombre": "Tablas",
+        "precio": 3000
+    },
+    {
+        "id": 5,
+        "nombre": "Mesa Fusion",
+        "precio": 15000
+    },
+    {
+        "id": 6,
+        "nombre": "Mesa Rio",
+        "precio": 7000
+    }
+]

@@ -78,16 +78,16 @@ formulario.addEventListener("submit", (event) => {
         });
     
 
+        localStorage.setItem("nombre", inputNombre.value );
+        localStorage.setItem("email", inputEmail.value );
+        localStorage.setItem("telefono", inputNumero.value );
+    
     // Limpiar los inputs
     inputNombre.value = "";
     inputEmail.value = "";
     inputNumero.value = "";
     inputConsul.value = "";
 
-    
-    
-
-    localStorage.setItem("FormularioEnviado", 1);
 
     setTimeout(function(){
         window.location.replace('exito.html');

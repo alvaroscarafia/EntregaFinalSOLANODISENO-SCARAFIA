@@ -11,6 +11,7 @@ botonComprar.addEventListener('click', comprarFuncion);
 
 const containerProductosCarrito = document.querySelector(".containerProductosCarrito");
 
+
                                                         /* FUNCION PARA AGREGAR AL CARRITO */
 
 function clickParaAgregar(event){
@@ -22,8 +23,9 @@ function clickParaAgregar(event){
     const imagenProductoCarrito = item.querySelector(".imgProducto").src;
 
     agregarProductosAlCarrito(nombreProductoCarrito,precioProductoCarrito,imagenProductoCarrito);
+
 // GUARDO EL NOMBRE DEL PRODUCTO QUE RESERVA
-localStorage.setItem('clave', nombreProductoCarrito);
+
 }
 
 // PARTE DOM. AGREGANDO AL CARRITO
