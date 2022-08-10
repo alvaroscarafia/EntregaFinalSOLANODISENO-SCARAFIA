@@ -20,7 +20,7 @@ html {
 
 /* FOOTER */
 footer {
-  background-image: url(/Multimedia/img/fondo1.png);
+  background-image: url(/Multimedia/img/fondo1.svg);
   background-position: bottom;
   border: 1rem double black;
   margin-bottom: 2rem;
@@ -310,7 +310,7 @@ header h1 {
   margin-top: 5em;
   min-height: 30em;
   border: 1rem double black;
-  background-image: url(/Multimedia/img/Solano/DSC_0254.jpg);
+  background-image: url(/Multimedia/img/Solano/DSC_0254-01.svg);
   background-position: center;
 }
 
